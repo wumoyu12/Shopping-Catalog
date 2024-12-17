@@ -8,15 +8,27 @@ h1, h2
 	text-align:center;
 }
 
-nav
+h1
 {
-	background:lightblue;
-	float: left;
-	width: 15%;
-	height: 100%;
+	font-size:38px;
 }
 
-div
+nav
 {
-	text-align:center;
+	background: lightblue;
+	float: left;
+	width: 15%;
+}
+
+label[id = "lblwel"]
+{
+	margin-left: 300px;
+	font-size:36px;
+	
+}
+
+label[id = "lblwelmsg"]
+{
+	margin-left: 20px;
+	font-size:20px;
 }
