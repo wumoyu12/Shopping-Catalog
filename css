@@ -32,8 +32,7 @@ nav
 
 label[id = "lblwel"]
 {
-	font-size:36px;
-	
+	font-size:36px;	
 }
 
 label[id = "lblwelmsg"]
@@ -43,6 +42,13 @@ label[id = "lblwelmsg"]
 
 th, td
 {
+	text-align:left;
 	border: 1px solid;
-	width:100%;
+	width:1660px;
+}
+
+.center
+{
+	margin-left: auto;
+	margin-right: auto;
 }
