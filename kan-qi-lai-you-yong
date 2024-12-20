@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+
+</head>
+<header>
+    <img src="header.jpg" style="border:3px solid black; border-radius:10px">
+    <p>the only way to predict the future, is to create it...</p>
+    <div>
+      <ul>
+          <li><a href="#" class="aboutme">About Me</a></li>
+          <li><a href="#" class="contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+  <div class="aboutme" id="about me" >
+    <p>This is about me</p>
+  </div>
+
+  <div class="contact" id="contact" style="display:none">
+    <p>This is my contact into </p>
+  </div>
+</body>
+
+</html>
