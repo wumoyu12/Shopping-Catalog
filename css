@@ -15,8 +15,6 @@ h2
 	margin-left: 20px;
 }
 
-tabel [id="title"]
-
 header
 {
 	padding: 20px;
@@ -53,4 +51,14 @@ th, td
 {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+th[id="thhawkzon"]
+{
+	width:170000px;
+}
+
+label[id = "lblhaekzon"]
+{
+	font-size:50px;
 }
