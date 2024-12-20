@@ -56,9 +56,6 @@ th, td
 th[id="thhawkzon"]
 {
 	width:170000px;
-}
-
-label[id = "lblhaekzon"]
-{
+	text-align:center;
 	font-size:50px;
 }
