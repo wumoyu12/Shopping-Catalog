@@ -1,46 +1,61 @@
-<!DOCTYPE html>
-<html>
+body
+{
+	background:lightyellow;
+	font-family: Times New Roman;
+}
 
-	<head>
-		<title>Shopping Catalog</title>
-		<link rel="stylesheet" type="text/css" href="customize.css"></link>
-		<script src="home.js"></script>
-	</head>
-	
-	<body>
-		<header>
-			<table id="title">
-				<tr>
-					<th id="thlogo"><img src = "Cart.png" alt="Logo"></img></th>
-					<th id="thhawkzon"><label id="lblhaekzon">Hawkzon</label></th>
-					<th id="thcart"><img src = "Cart.png" alt="Cart"></img></th>
-				</tr>
-			</table>
-		</header>
-		
-		<nav>
-			<h2>Menu</h2>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Help</a></li>
-			</ul>
-		</nav>
-			
-		<div id="divhome">
-		<table class="center">
-				
-				<tr>
-					<td><label id="lblwel"><b>Welcome!</b></label><br></td>
-				</tr>
-				
-				<tr>
-					<td><label id="lblwelmsg">Welcome to Hawkzon! Let's start purchasing for our school lives at Hillcrest High School.</label></td>
-				</tr>
-				
-			</table>
-			
-			
-		</div>
-	</body>
-	
-</html>
+h1
+{
+	text-align:center;
+	font-size:38px;
+}
+
+h2
+{
+	margin-left: 20px;
+}
+
+header
+{
+	padding: 20px;
+	background: #6bb5f1;
+}
+
+
+nav
+{
+	background: lightblue;
+	float: left;
+	width: 10%;
+	height:1000px;
+}
+
+label[id = "lblwel"]
+{
+	font-size:36px;	
+}
+
+label[id = "lblwelmsg"]
+{
+	font-size:20px;
+}
+
+th, td
+{
+	text-align:left;
+	border: 1px solid;
+	width:1660px;
+}
+
+.center
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th[id="thhawkzon"]
+{
+	width:170000px;
+	text-align:center;
+	font-size:50px;
+}
