@@ -1,0 +1,371 @@
+index.html
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hawkzon</title>
+		<link rel="stylesheet" type="text/css" href="customize.css"></link>
+		<script src="home.js"></script>
+	</head>
+	
+	<body>
+		<header id="HEAD">
+			<table id="title" style="width:100%">
+				<tr>
+					<th id="thlogo"><a href="#"><img src = "Logo.JPG" width="127"></img></a></th>
+					<th id="thhawkzon">Hawkzon</th>
+					<th id="thcart"><a href="#"><img src = "ShoppingCart.JPG" width="127"></img></a></th>
+				</tr>
+			</table>
+		</header>
+		
+		<nav>
+			<table id="links" style="width:95%">
+			<tr>
+				<th id="home" style="width:10%"><a href="#HEAD">Home</a></th>
+				<td id="stationery" style="width:20%"><a href="#STATIONERY">Stationery</a></td>
+				<td id="uniform" style="width:20%"><a href="#UNIFORM">Uniform</a></td>
+				<td id="sport" style="width:20%"><a href="#SPORT">Sport Equipment</a></td>
+				<td id="others" style="width:20%"><a href="#OTHERS">Others</a></td>
+				<th id="help" style="width:10%"><a href="#HELP">Help</a></th>
+			</tr>
+			</table>
+		</nav>
+			
+		<div id="HOME">
+			<table id="welcomeMSG" style="width:95%">
+				<tr>
+					<th id="welcome">Welcome!</th>
+				</tr>
+				<tr>
+					<td id="welcome2">Welcome to Hawkzon! Let's start purchasing for our school lives at Hillcrest High School!</td>
+				</tr>
+			</table>
+			<br>
+			<table id="ad" style="width:95%">
+				<tr>
+					<td id="ad"><a href="#"><img src = "AD_cup.JPG" width="800"></img></a></td>
+				</tr>
+			</table>
+			<br>
+			<table id="all" style="width:95%">
+				<tr>
+					<th colspan="4" id="recommendations">Recommendations</th>
+				</tr>
+				<tr> 
+					<td id="item" style="width:20%"><a href="#"><img src = "badminton.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "pencilcase.JPG" width="300"></img></a></td>
+					
+					<td id="item" style="width:20%">
+						<table>
+							<tr>
+								<td style="width:20%"><a href="#STATIONERY"><img src = "stationery.JPG" width="150"></img></a></td>
+						 		<td style="width:20%"><a href="#UNIFORM"><img src = "shirt.JPG" width="150"></img></a></td>
+							</tr>
+							<tr>
+								<td style="width:20%"><a href="#SPORT"><img src = "sport.JPG" width="150"></img></a></td>
+						 		<td style="width:20%"><a href="#OTHERS"><img src = "chromebook.JPG" width="150"></img></a></td>
+							</tr>
+						</table>
+					</td>
+					
+					<td id="item" style="width:20%"><a href="hillcrest.html"><img src = "hillcrest.JPG" width="300"></img></a></td>
+				</tr>
+				
+				<tr> 
+					<td id="description"><a href="#">Badminton</a></td>
+					<td id="description"><a href="#">Pencil Case</a></td>
+					<td id="description"><a href="#">Categories</a></td>
+					<td id="description"><a href="hillcrest.html">About Hillcrest</a></td>
+				</tr>
+			</table>	
+			<br>
+			<table id="ad" style="width:95%">
+				<tr>
+					<td id="ad"><a href="#"><img src = "AD_basketball.JPG" width="800"></img></a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<br>	
+		<div id="STATIONERY">
+			<table id="all" style="width:95%">
+				<tr>
+					<th colspan="4" id="stationery">Stationery</th>
+				</tr>
+				
+				<tr> 
+					<td id="item" style="width:20%"><a href="#"><img src = "calculator.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "sharpener.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "pencils.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "eraser.JPG" width="300"></img></a></td>
+				</tr>
+
+				<tr> 
+					<td id="description"><a href="#">TI-84 Calculator</a></td>
+					<td id="description"><a href="#">Sharpener</a></td>
+					<td id="description"><a href="#">Pencil</a></td>
+					<td id="description"><a href="#">Eraser</a></td>
+				</tr>
+			</table>
+			<br>
+			<table id="all" style="width:95%">
+				<tr> 
+					<td id="item" style="width:20%"><a href="#"><img src = "highlighter.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "ruler.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "pen.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "notebook.JPG" width="300"></img></a></td>
+				</tr>
+				<tr> 
+					<td id="description"><a href="#">Highlighter</a></td>
+					<td id="description"><a href="#">Ruler</a></td>
+					<td id="description"><a href="#">Pen</a></td>
+					<td id="description"><a href="#">Notebook</a></td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<div id="UNIFORM">
+			<table id="all" style="width:95%">
+				<tr>
+					<th colspan="4" id="uniform">Uniform</th>
+				</tr>
+				
+				<tr> 
+					<td id="item" style="width:20%"><a href="#"><img src = "shirt.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "sweater.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "pants.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "skirt.JPG" width="300"></img></a></td>
+				</tr>
+
+				<tr> 
+					<td id="description"><a href="#">Shirt</a></td>
+					<td id="description"><a href="#">Sweater</a></td>
+					<td id="description"><a href="#">Pants</a></td>
+					<td id="description"><a href="#">Skirt</a></td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<div id="SPORT">
+			<table id="all" style="width:95%">
+				<tr>
+					<th colspan="4" id="sportequipment">Sport Equipment</th>
+				</tr>
+				
+				<tr> 
+					<td id="item" style="width:20%"><a href="#"><img src = "basketball.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "football.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "soccer.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "volleyball.JPG" width="300"></img></a></td>
+				</tr>
+
+				<tr> 
+					<td id="description"><a href="#">Basketball</a></td>
+					<td id="description"><a href="#">Football</a></td>
+					<td id="description"><a href="#">Soccer</a></td>
+					<td id="description"><a href="#">Volleyball</a></td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<div id="OTHERS">
+			<table id="all" style="width:95%">
+				<tr>
+					<th colspan="4" id="others">Others</th>
+				</tr>
+				
+				<tr> 
+					<td id="item" style="width:20%"><a href="#"><img src = "chromebook.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "cup.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "bag.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "books.JPG" width="300"></img></a></td>
+				</tr>
+
+				<tr> 
+					<td id="description"><a href="#">Chromebook</a></td>
+					<td id="description"><a href="#">Custom Cup</a></td>
+					<td id="description"><a href="#">School Bag</a></td>
+					<td id="description"><a href="#">Books</a></td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<div id="HELP">
+			<table style="width:95%">
+				<tr><th id="help">Help</th></tr>
+				
+				<tr><td>Choose a category to start your shopping trip!</td></tr>
+				<tr><td><hr style="width:400px"></hr></td></tr>
+				<tr><th>Contact Info:</th></tr>
+				<tr><td>Phone Number: 400-827-8278</td></tr>	
+				<tr><td>Email: hawkzonww@gmail.com</td></tr>
+			</table>
+		</div>
+	</body>
+	
+</html>
+---------------------------------------------------------------------------
+customize.css
+
+body
+{
+	background:#faebd4;
+	font-family:Times New Roman;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+h1
+{
+	text-align:center;
+}
+
+header
+{
+	padding: 20px;
+	background: #6bb5f1;
+}
+
+nav
+{
+	background: lightblue;
+	float: top;
+	
+}
+
+table,th,td
+{
+	margin: auto;
+	text-align:center;
+	font-size:20px;
+	/*border: 1px solid black;*/
+	border-collapse: collapse;
+}
+
+table[id="welcomeMSG"]
+{
+	background: #d4d8fa;
+}
+
+td[id="item"],[id="description"]
+{
+	border: 1px solid black;
+	background: #d4d8fa;
+}
+
+td[id="ad"]
+{
+	background: #d4d8fa;
+}
+
+th[id="thhawkzon"]
+{
+	width:100%;
+	text-align:center;
+	font-size:50px;
+}
+
+th[id="welcome"]
+{
+	font-size:35px;
+	text-align:left;
+}
+
+td[id="welcome2"]
+{
+	font-size:20px;
+	text-align:left;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+---------------------------------------
+home.js
+
+window.addEventListener("load",AddListener);
+
+function AddListener()
+{
+	document.getElementById("btn").addEventListener("click",Links);
+}
+
+function Links()
+{
+	localStorage.clear();
+	msg = "hello";
+	localStorage.setItem("MSG",msg);	
+}
+---------------------------------------------------------
+
+hillcrest.html
+
+<!DOCTYPE html>
+<html>
+		<title>Hawkzon</title>
+		<link rel="stylesheet" type="text/css" href="hillcrest.css"></link>
+	
+	<body>
+		<img src = "HillcrestHeader.JPG" ></img>
+		<h1>Contact Info:</h1>
+		<div id="firstpart">
+			<table id="CONTACTINFO" style="width:100%">
+				<tr><td>Location: 160-05 Highland Avenue, Queens, NY 11432</td></tr>	
+				<tr><td>Phone: 718-658-5407</td></tr>
+				<tr><td>Fax: 718-739-5137</td></tr>
+				<tr><td><a href="https://www.hillcrestweb.com/">School Website</a></td></tr>	
+			</table>
+		</div>
+		
+		<h1>Overview:</h1>
+		<div id="secondpart">
+			<table id="OVERVIEW" style="width:100%">
+				<tr><td>School Number: Q505</td></tr>	
+				<tr><td>Accessibility: Fully Accessible</td></tr>
+				<tr><td>Grades: 09,10,11,12,SE</td></tr>
+				<tr><td>Geographic District: 28</td></tr>	
+				<tr><td>Borough: Queens</td></tr>	
+			</table>
+		</div>
+		
+		<h1>Admissions:</h1>
+		<div id="thirdpart">
+			<table id="ADMISSIONS" style="width:100%">
+				<tr><td>For School Specific Admission Information</td></tr>	
+				<tr><td><a href="https://www.myschools.nyc/en/schools/">Browse NYC Schools on MySchools.nyc</a></td></tr>
+			</table>
+		</div>
+		
+	</body>
+	
+</html>
+---------------------------------------------------------
+hillcrest.css
+
+body
+{
+	background:#faebd4;
+	font-family:Times New Roman;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+table,th,td
+{
+	margin: auto;
+	text-align:left;
+	font-size:20px;
+}
+
+h1
+{
+	background: #d4d8fa;
+}
