@@ -12,7 +12,7 @@ index.html
 		<header id="HEAD">
 			<table id="title" style="width:100%">
 				<tr>
-					<th id="thlogo"><a href="#"><img src = "Logo.JPG" width="127"></img></a></th>
+					<th id="thlogo"><img src = "Logo.JPG" width="127"></img></th>
 					<th id="thhawkzon">Hawkzon</th>
 					<th id="thcart"><a href="#"><img src = "ShoppingCart.JPG" width="127"></img></a></th>
 				</tr>
@@ -53,8 +53,8 @@ index.html
 					<th colspan="4" id="recommendations">Recommendations</th>
 				</tr>
 				<tr> 
-					<td id="item" style="width:20%"><a href="#"><img src = "badminton.JPG" width="300"></img></a></td>
-					<td id="item" style="width:20%"><a href="#"><img src = "pencilcase.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a id="Lbadminton" href="#"><img src = "badminton.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a id="Lpencilcase" href="#"><img src = "pencilcase.JPG" width="300"></img></a></td>
 					
 					<td id="item" style="width:20%">
 						<table>
@@ -73,9 +73,9 @@ index.html
 				</tr>
 				
 				<tr> 
-					<td id="description"><a href="#">Badminton</a></td>
-					<td id="description"><a href="#">Pencil Case</a></td>
-					<td id="description"><a href="#">Categories</a></td>
+					<td id="description"><a id="Lbadminton" href="#">Badminton</a></td>
+					<td id="description"><a id="Lpencilcase" href="#">Pencil Case</a></td>
+					<td id="description">Categories</td>
 					<td id="description"><a href="hillcrest.html">About Hillcrest</a></td>
 				</tr>
 			</table>	
@@ -196,6 +196,8 @@ index.html
 				<tr><th id="help">Help</th></tr>
 				
 				<tr><td>Choose a category to start your shopping trip!</td></tr>
+				<tr><td><a href="#HEAD">Scroll To Top</a></td></tr>
+				
 				<tr><td><hr style="width:400px"></hr></td></tr>
 				<tr><th>Contact Info:</th></tr>
 				<tr><td>Phone Number: 400-827-8278</td></tr>	
@@ -292,7 +294,7 @@ window.addEventListener("load",AddListener);
 
 function AddListener()
 {
-	document.getElementById("btn").addEventListener("click",Links);
+	document.getElementById("Lbadminton").addEventListener("click",Links);
 }
 
 function Links()
@@ -311,7 +313,7 @@ hillcrest.html
 		<link rel="stylesheet" type="text/css" href="hillcrest.css"></link>
 	
 	<body>
-		<img src = "HillcrestHeader.JPG" ></img>
+		<img id="hillcrestheaderpic" src = "HillcrestHeader.JPG" ></img>
 		<h1>Contact Info:</h1>
 		<div id="firstpart">
 			<table id="CONTACTINFO" style="width:100%">
