@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Insert title here</title>
+		<title>Hawkzon</title>
 		<link rel="stylesheet" type="text/css" href="product.css"></link>
 		<script src="product.js"></script>
 	</head>
@@ -10,7 +10,7 @@
 			<table id="title" style="width:100%">
 				<tr>
 					<th id="thlogo"><a href="#"><img src = "Logo.JPG" width="127"></img></a></th>
-					<th id="thhawkzon">HAWKZON</th>
+					<th id="thhawkzon">Calculator</th>
 					<th id="thcart"><a href="#"><img src = "ShoppingCart.JPG" width="127"></img></a></th>
 				</tr>
 			</table>
@@ -32,9 +32,9 @@
 
 					<td>
 						<label id="lblnum">Number:</label><br>
-						<button id="btn-">-</button>
-						<input type="text" id="howmany" placeholder="Numbers" autofocus></input>
-						<button id="btn+">+</button><br>
+						 <!--<button id="btn-">-</button>-->
+						<input type="number" id="howmany" placeholder="Number" autofocus></input><br>
+						<!--<button id="btn+">+</button><br>-->
 						
 						<label id="Color">Color:</label><br>
 						<button id="btnred">Red</button>
@@ -42,7 +42,7 @@
 						<button id="btnred">Blue</button><br>
 						
 						<label id="lbLremarks">Order Remarks(Optional):</label><br>
-						<input type="text" id="txtremarks" placeholder="Ex. May I have one red and blue? " autofocus></input>
+						<input type="text" id="txtremarks" placeholder="Ex.May I have one 1 and 1 blue?" autofocus></input>
 					</td>
 				</tr>
 					
@@ -51,9 +51,8 @@
 						<label id="lblinfo">Item Info</label>
 						<ul>
 							<li>Color: Red, Black, Blue</li>
-							<li>Power Source: Battery</li>
+							<li>Power Source: Rechargeable battery</li>
 							<li>Calculator Type: Graphing</li>
-							<li>Brand: Hawkzon Electronics</li>
 						</ul>
 					</td>
 				</tr>
@@ -61,7 +60,9 @@
 			</table>
 			
 			<button id="AddToCart">Add to Cart</button><br>
-			<button id="BuyNow">Buy Now</button>
+			<button id="BuyNow">Buy Now</button><br>
+			<label id="lblship">Ships from:Hawkzon</label><br>
+			<label id="lblsold">Sold by:Hawkzon</label>
 		</div>
 	</body>
 </html>
