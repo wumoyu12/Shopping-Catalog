@@ -1,61 +1,45 @@
-body
-{
-	background:lightyellow;
-	font-family: Times New Roman;
-}
-
-h1
-{
-	text-align:center;
-	font-size:38px;
-}
-
-h2
-{
-	margin-left: 20px;
-}
-
 header
 {
 	padding: 20px;
 	background: #6bb5f1;
 }
 
-
-nav
+body
 {
-	background: lightblue;
-	float: left;
-	width: 10%;
-	height:1000px;
-}
-
-label[id = "lblwel"]
-{
-	font-size:36px;	
-}
-
-label[id = "lblwelmsg"]
-{
-	font-size:20px;
-}
-
-th, td
-{
-	text-align:left;
-	border: 1px solid;
-	width:1660px;
-}
-
-.center
-{
-	margin-left: auto;
-	margin-right: auto;
+	background:#faebd4;
+	font-family:Times New Roman;
 }
 
 th[id="thhawkzon"]
 {
-	width:170000px;
+	width:100%;
 	text-align:center;
 	font-size:50px;
+}
+
+label
+{
+	font-size:35px;
+}
+
+table,th,td
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+li
+{
+	font-size:20px;
+}
+
+td [id="image"]
+{
+	width:100%;
+	text-align:center;
+}
+
+input[id="txtremarks"]
+{
+	height:50px;
 }
