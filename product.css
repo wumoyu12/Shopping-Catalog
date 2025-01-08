@@ -32,3 +32,14 @@ li
 {
 	font-size:20px;
 }
+
+td [id="image"]
+{
+	width:100%;
+	text-align:center;
+}
+
+input[id="txtremarks"]
+{
+	height:50px;
+}
