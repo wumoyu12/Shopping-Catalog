@@ -1,0 +1,101 @@
+				<tr> 
+					<td id="item" style="width:20%"><a id="Lcalculator" href="product.html"><img src = "calculator.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a id="Lsharpener" href="product.html"><img src = "sharpener.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "pencils.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "eraser.JPG" width="300"></img></a></td>
+				</tr>
+
+
+
+window.addEventListener("load",AddListener);
+window.addEventListener("load",AFunction);
+
+function AddListener()
+{
+	document.getElementById("Lcalculator").addEventListener("click",Links);
+	document.getElementById("Lsharpener").addEventListener("click",Link2);
+}
+
+function Links()
+{
+	localStorage.clear();
+	msg = "calculator";
+	localStorage.setItem("MSG",msg);	
+}
+
+function Link2()
+{
+	localStorage.clear();
+	msg = "sharpener";
+	localStorage.setItem("MSG",msg);	
+}
+
+
+
+
+window.addEventListener("load",InitControls);
+
+function InitControls()
+{
+	document.getElementById("divCalculator").style.display = "none";
+	document.getElementById("divSharpener").style.display = "none";
+	Msg = localStorage.getItem("MSG");
+	WhichProduct();
+}
+
+function WhichProduct()
+{
+	if(Msg == "calculator")
+	{
+		document.getElementById("divCalculator").style.display = "block";
+	}
+	if(Msg == "sharpener")
+	{
+		document.getElementById("divSharpener").style.display = "block";
+	}
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function AFunction()
+{
+	alert("hello")
+	localStorage.clear();
+		var x = a.id
+		switch(x)
+		{
+			case 1:
+				msg = "calculator";
+				break;
+			case 2:
+				msg = "sharpener";
+				break;
+			default:
+				return false;
+		}
+		localStorage.setItem("MSG",msg);	
+		alert(msg)
+}
+
+
+
+
+					<td id="item" style="width:20%"><a id="1" onclick="AFunction(a)" href="product.html"><img src = "calculator.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a id="2" onclick="AFunction(a)" href="product.html"><img src = "sharpener.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "pencils.JPG" width="300"></img></a></td>
+					<td id="item" style="width:20%"><a href="#"><img src = "eraser.JPG" width="300"></img></a></td>
