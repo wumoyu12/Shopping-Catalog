@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hawkzon</title>
+		<link rel="stylesheet" type="text/css" href="product.css"></link>
+		<script src="product.js"></script>
+	</head>
+	<body>
+		<header id="HEAD">
+			<table id="title" style="width:100%">
+				<tr>
+					<th id="thlogo"><a href="#"><img src = "Logo.JPG" width="127"></img></a></th>
+					<th id="thhawkzon">Calculator</th>
+					<th id="thcart"><a href="#"><img src = "ShoppingCart.JPG" width="127"></img></a></th>
+				</tr>
+			</table>
+		</header>
+		
+		<div id="divCalculator">
+		
+			<table style="width:75%" id="Item">
+				<tr>
+					<th id="itemname">
+						<label id="lblitemname">TI-84 Calculator</label>
+					</th>
+				</tr>
+				
+				<tr>
+					<td id="image">
+						<img src = "calculator.JPG" width="400"></img>
+					</td>
+
+					<td id="orderinfo">
+						<label id="lblnum">Number:</label><br>
+						 <!--<button id="btn-">-</button>-->
+						<input type="number" id="howmany" placeholder="Number" autofocus></input><br>
+						<!--<button id="btn+">+</button><br>-->
+						
+						<label id="Color">Color:</label><br>
+						<button id="btnred">Red</button>
+						<button id="btnblack">Black</button>
+						<button id="btnred">Blue</button><br>
+						
+						<label id="lbLremarks">Order Remarks(Optional):</label><br>
+						<input type="text" id="txtremarks" placeholder="Ex.May I have 1 red and 1 blue?" autofocus></input>
+					</td>
+					<td id="RelatedItem" rowspan="3">
+						<nav>
+							<h2>Related items</h2>
+							<ul>
+								<li><a href="#">ABC</a></li>
+								<li><a href="#">DEF</a></li>
+							</ul>
+						</nav> 
+					</td>
+				</tr>
+					
+				<tr>
+					<td id="information">
+						<label id="lblinfo">Item Info</label>
+						<ul>
+							<li>Color: Red, Black, Blue</li>
+							<li>Power Source: Rechargeable battery</li>
+							<li>Calculator Type: Graphing</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td id="additionalInfo">
+						<button id="AddToCart">Add to Cart</button><br>
+						<button id="BuyNow">Buy Now</button><br>
+						<label id="lblship">Ships from:Hawkzon</label><br>
+						<label id="lblsold">Sold by:Hawkzon</label>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+header
+{
+	padding: 20px;
+	background: #6bb5f1;
+}
+
+body
+{
+	background:#faebd4;
+	font-family:Times New Roman;
+}
+
+th[id="thhawkzon"]
+{
+	width:100%;
+	text-align:center;
+	font-size:50px;
+}
+
+label
+{
+	font-size:35px;
+}
+
+table,th,td
+{
+	margin: auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+li
+{
+	font-size:20px;
+}
+
+td[id="image"],[id="orderinfo"],[id="RelatedItem"],[id="information"],[id="additionalInfo"][id="additionalInfo"]
+{
+	background: lightblue;
+}
+
+td[id="image"]
+{
+	text-align:center;
+}
+
+input[id="howmany"]
+{
+	width:65px;
+}
+
+input[id="txtremarks"]
+{
+	height:100px;
+	width:200px;
+}
+
+label[id="lblship"], [id="lblsold"]
+{
+	font-size:20px;
+}
+
+nav
+{
+	width: 100%;
+	height: 700px;
+}
