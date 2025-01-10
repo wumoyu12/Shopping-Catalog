@@ -1,13 +1,57 @@
-header
+label[id="lblitemname"]
 {
-	padding: 20px;
-	background: #6bb5f1;
+	font-size: 35px;
 }
 
 body
 {
-	background:#faebd4;
-	font-family:Times New Roman;
+    background-color: #faebd4;
+    font-family:Times New Roman;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+header
+{
+    padding: 20px;
+    background: #6bb5f1;
+}
+
+table
+{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table[id="Item"]
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td
+{
+	border-collapse: collapse;
+    /*padding: 10px;*/
+    text-align: center;
+}
+
+th[id="itemname"]
+{
+	background-color: #f1f8e9;
+}
+
+td[id="image"], [id="orderinfo"], td[id="additionalInfo"], td[id="information"]
+{
+	border: 1px solid black;
+    background-color: #e0f7fa;
+    /*padding: 20px;*/
+}
+
+td[id="RelatedItem"]
+{
+    background-color: #f1f8e9;
+	/*padding: 20px;*/
 }
 
 th[id="thhawkzon"]
@@ -19,56 +63,89 @@ th[id="thhawkzon"]
 
 label
 {
-	font-size:35px;
+	font-size: 18px;
 }
 
-table,th,td
+label[id="lblprice"], [id="lblstock"]
 {
-	margin: auto;
-	border: 1px solid black;
-	border-collapse: collapse;
+	font-size: 30px;
+	color:green;
 }
 
-li
+label,[id="lblnum"], [id="lblcolor"], [id="lbLremarks"], [id="lbliteminfo"], [id="RelatedItem"]
 {
-	font-size:20px;
-}
-
-td[id="image"],[id="orderinfo"],[id="RelatedItem"],[id="information"],[id="additionalInfo"][id="additionalInfo"]
-{
-	background: lightblue;
-}
-
-td[id="image"]
-{
-	text-align:center;
-}
-
-input[id="howmany"]
-{
-	width:65px;
-}
-
-input[id="txtremarks"]
-{
-	height:100px;
-	width:200px;
-}
-
-label[id="lblship"], [id="lblsold"]
-{
-	font-size:20px;
-}
-
-nav
-{
-	width: 100%;
-	height: 700px;
+	font-size: 23px;
 }
 
 button
 {
-	font-size:20px;
-	border-radius: 12px;
-	
+	background-color: #3f51b5;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+}
+
+/*
+button [id="btnred"]
+{
+	background-color: red;
+}
+
+button [id="btnblue"]
+{
+	background-color: blue;
+}
+
+button [id="btnblack"]
+{
+	background-color: black;
+}
+*/
+
+input[type="number"], input[type="text"]
+{
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input[type="number"]
+{
+    width: 60%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li
+{
+    font-size: 16px;
+}
+
+/*
+nav h2, h3
+{
+    font-size: 24px;
+}
+*/
+
+nav ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+
+
+nav ul li
+{
+	font-size: 18px;
+    text-decoration: none;
+    color: #3f51b5;
 }
