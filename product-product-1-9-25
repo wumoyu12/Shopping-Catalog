@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Hawkzon</title>
+	    <link rel="stylesheet" type="text/css" href="product.css">
+	    <link rel="shortcut icon" href="Logo.JPG" type="image/x-icon">
+	    <script src="product.js"></script>
+	</head>
+	<body>
+	    <header id="HEAD">
+	        <table id="title" style="width:100%">
+	            <tr>
+	                <th id="thlogo"><a href="#"><img src="Logo.JPG" width="127"></a></th>
+	                <th id="thhawkzon">Hawkzon</th>
+	                <th id="thcart"><a href="#"><img src="ShoppingCart.JPG" width="127"></a></th>
+	            </tr>
+	        </table>
+	    </header>
+	
+	    <div id="divCalculator">
+	        <table id="Item" style="width:80%">
+	            <tr>
+	                <th id="itemname" colspan="3">
+	                    <label id="lblitemname">TI-84 Calculator</label>
+	                </th>
+	            </tr>
+	            <tr>
+	                <td id="image">
+	                    <img src="calculator.JPG" width="400" alt="Calculator">
+	                </td>
+	                <td id="orderinfo" rowspan="2">
+	                    <b><label for="howmany" id="lblnum">Number:</label></b><br>
+	                    <input type="number" id="howmany" placeholder="Quantity"><br>
+	
+	                    <b><label id="lblcolor">Color:</label></b><br>
+	                    <button id="btnred">Red</button>
+	                    <button id="btnblack">Black</button>
+	                    <button id="btnblue">Blue</button><br>
+	
+	                    <b><label id="lbLremarks">Order Remarks (Optional):</label></b><br>
+	                    <input type="text" id="txtremarks" placeholder="Ex.May I have one red and one blue?">
+	                </td>
+	
+	                <td id="additionalInfo" rowspan="2">
+						<label id="lblprice">Price: $90.00</label><br>
+	                    <label id="lblstock">In Stock</label><br><br>
+	                    
+	                    <button id="AddToCart">Add to Cart</button><br>
+	                    <button id="BuyNow">Buy Now</button><br>
+	                    
+	                    <label id="lblship">Ships from: Hawkzon</label><br>
+	                    <label id="lblsold">Sold by: Hawkzon</label>
+	                </td>
+	            </tr>
+	
+	            <tr>
+	                <td id="information">
+	                    <b><label id="lbliteminfo">Item Info</label></b>
+	                    <ul>
+	                        <li>Color: Red, Black, Blue</li>
+	                        <li>Power Source: Rechargeable battery</li>
+	                        <li>Calculator Type: Graphing</li>
+	                    </ul>
+	                </td>
+	            </tr>
+
+	            <tr>
+	                <td id="RelatedItem" colspan="3">
+	                    <nav>
+	                    	<table style="width:100%" id="tableRelatedInfo">
+	                    		<tr><td id="tdRelatedinfo"><b><label id="lblrelatedinfo">Related items</label></b></td></tr>
+	                    		<tr>
+			                        <td><a href="#"><img src = "ruler.JPG" width="80"></img></a>
+		                            <a href="#"><img src = "eraser.JPG" width="80"></a>
+		                            <a href="#"><img src = "eraser.JPG" width="80"></a></td>
+	                            </tr>                  	
+	                    	</table>
+	                    </nav>
+	                </td>
+	            </tr>
+	        </table>
+	    </div>
+	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label[id="lblitemname"]
+{
+	font-size: 35px;
+}
+
+body
+{
+    background-color: #faebd4;
+    font-family:Times New Roman;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+header
+{
+    padding: 20px;
+    background: #6bb5f1;
+}
+
+table
+{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table[id="Item"]
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td
+{
+	border-collapse: collapse;
+    /*padding: 10px;*/
+    text-align: center;
+}
+
+th[id="itemname"]
+{
+	background-color: #f1f8e9;
+}
+
+td[id="image"], [id="orderinfo"], td[id="additionalInfo"], td[id="information"]
+{
+	border: 1px solid black;
+    background-color: #e0f7fa;
+    /*padding: 20px;*/
+}
+
+td[id="RelatedItem"]
+{
+    background-color: #f1f8e9;
+	/*padding: 20px;*/
+}
+
+th[id="thhawkzon"]
+{
+	width:100%;
+	text-align:center;
+	font-size:50px;
+}
+
+label
+{
+	font-size: 18px;
+}
+
+label[id="lblprice"], [id="lblstock"]
+{
+	font-size: 30px;
+	color:green;
+}
+
+label,[id="lblnum"], [id="lblcolor"], [id="lbLremarks"], [id="lbliteminfo"], [id="RelatedItem"]
+{
+	font-size: 23px;
+}
+
+button
+{
+	background-color: #3f51b5;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+}
+
+/*
+button [id="btnred"]
+{
+	background-color: red;
+}
+
+button [id="btnblue"]
+{
+	background-color: blue;
+}
+
+button [id="btnblack"]
+{
+	background-color: black;
+}
+*/
+
+input[type="number"], input[type="text"]
+{
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input[type="number"]
+{
+    width: 60%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li
+{
+    font-size: 16px;
+}
+
+/*
+nav h2, h3
+{
+    font-size: 24px;
+}
+*/
+
+nav ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+
+
+nav ul li
+{
+	font-size: 18px;
+    text-decoration: none;
+    color: #3f51b5;
+}
