@@ -1,65 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 	<head>
 		<title>Hawkzon</title>
-		<link rel="stylesheet" type="text/css" href="product.css"></link>
-		<link rel="shortcut icon" type="x-icon" href="Logo.JPG"></link>
+		<link rel="stylesheet" type="text/css" href="product.css">
+		<link rel="shortcut icon" href="Logo.JPG" type="image/x-icon">
 		<script src="product.js"></script>
 	</head>
+	
 	<body>
 		<header id="HEAD">
 			<table id="title" style="width:100%">
 				<tr>
-					<th id="thlogo"><a href="#"><img src = "Logo.JPG" width="127"></img></a></th>
-					<th id="thhawkzon">Item</th>
-					<th id="thcart"><a href="#"><img src = "ShoppingCart.JPG" width="127"></img></a></th>
+					<th id="thlogo"><a href="#"><img src="Logo.JPG" width="127"></a></th>
+					<th id="thhawkzon">Hawkzon</th>
+					<th id="thcart"><a href="#"><img src="ShoppingCart.JPG" width="127"></a></th>
 				</tr>
 			</table>
 		</header>
-		
+	
 		<div id="divCalculator">
-		
-			<table style="width:75%" id="Item">
+			<table id="Item" style="width:80%">
 				<tr>
-					<th id="itemname">
+					<th id="itemname" colspan="3">
 						<label id="lblitemname">TI-84 Calculator</label>
 					</th>
 				</tr>
 				
 				<tr>
-					<td id="image">
-						<img src = "calculator.JPG" width="400"></img>
-					</td>
-
-					<td id="orderinfo">
-						<label id="lblnum">Number:</label><br>
-						 <!--<button id="btn-">-</button>-->
-						<input type="number" id="howmany" placeholder="Number" autofocus></input><br>
-						<!--<button id="btn+">+</button><br>-->
-						
-						<label id="Color">Color:</label><br>
+					<td id="image"><img src="calculator.JPG" width="400" alt="Calculator"></td>
+					
+					<td id="orderinfo" rowspan="2">
+						<b><label for="howmany" id="lblnum">Number:</label></b><br>
+						<input type="number" id="howmany" placeholder="Quantity"><br>
+						<b><label id="lblcolor">Color:</label></b><br>
 						<button id="btnred">Red</button>
 						<button id="btnblack">Black</button>
-						<button id="btnred">Blue</button><br>
-						
-						<label id="lbLremarks">Order Remarks(Optional):</label><br>
-						<input type="text" id="txtremarks" placeholder="Ex.May I have 1 red and 1 blue?" autofocus></input>
+						<button id="btnblue">Blue</button><br>
+						<b><label id="lbLremarks">Order Remarks (Optional):</label></b><br>
+						<input type="text" id="txtremarks" placeholder="Ex.May I have one red and one blue?">
 					</td>
 					
-					<td id="additionalInfo">
+					<td id="additionalInfo" rowspan="2">
+					
+						<label id="lblprice">Price: $90.00</label><br>
+						<label id="lblstock">In Stock</label><br><br>
 						<button id="AddToCart">Add to Cart</button><br>
 						<button id="BuyNow">Buy Now</button><br>
-						<label id="lblship">Ships from:Hawkzon</label><br>
-						<label id="lblsold">Sold by:Hawkzon</label>
+						                    
+						<label id="lblship">Ships from: Hawkzon</label><br>
+						<label id="lblsold">Sold by: Hawkzon</label>
 					</td>
 				</tr>
-				
-				
-
-					
 				<tr>
 					<td id="information">
-						<label id="lblinfo">Item Info</label>
+						<b><label id="lbliteminfo">Item Info</label></b>
 						<ul>
 							<li>Color: Red, Black, Blue</li>
 							<li>Power Source: Rechargeable battery</li>
@@ -67,51 +62,211 @@
 						</ul>
 					</td>
 				</tr>
-				
+						
 				<tr>
-					<td id="RelatedItem" rowspan="3">
+					<td id="RelatedItem" colspan="3">
 						<nav>
-							<h2>Related items</h2>
-							<ul>
-								<li><a href="#">ABC</a></li>
-								<li><a href="#">DEF</a></li>
-							</ul>
-						</nav> 
+							<table style="width:100%" id="tableRelatedInfo">
+									<tr>
+										<td id="tdRelatedinfo"><b><label id="lblrelatedinfo">Related items</label></b></td></tr>
+									<tr>
+									<td>
+										<a href="#"><img src = "ruler.JPG" width="80"></img></a>
+										<a href="#"><img src = "eraser.JPG" width="80"></a>
+										<a href="#"><img src = "pencils.JPG" width="80"></a>
+									</td>
+								</tr>                  	
+							</table>
+						</nav>
 					</td>
 				</tr>
 			</table>
-			
 		</div>
-		
-		<div id="divsharpener">
-			<table style="width:75%" id="Item">
+
+		<div id="divSharpener">
+			<table id="Item" style="width:80%">
 				<tr>
-					<th id="itemname">
+					<th id="itemname" colspan="3">
 						<label id="lblitemname">Sharpener</label>
 					</th>
 				</tr>
+				
+				<tr>
+					<td id="image"><img src="sharpener.JPG" width="400" alt="Sharpener"></td>
+					
+					<td id="orderinfo" rowspan="2">
+						<b><label for="howmany" id="lblnum">Number:</label></b><br>
+						<input type="number" id="howmany" placeholder="Quantity"><br>
+						<b><label id="lblcolor">Color:</label></b><br>
+						<button id="btnpink">Pink</button>
+						<button id="btngreen">Green</button><br>
+						<button id="btnorange">Orange</button>
+						<button id="btnblue">Blue</button><br>
+						<b><label id="lbLremarks">Order Remarks (Optional):</label></b><br>
+						<input type="text" id="txtremarks" placeholder="Ex.May I have one orange and one blue?">
+					</td>
+					
+					<td id="additionalInfo" rowspan="2">
+						<label id="lblprice">Price: $3.99</label><br>
+						<label id="lblstock">In Stock</label><br><br>
+						<button id="AddToCart">Add to Cart</button><br>
+						<button id="BuyNow">Buy Now</button><br>
+						                    
+						<label id="lblship">Ships from: Hawkzon</label><br>
+						<label id="lblsold">Sold by: Hawkzon</label>
+					</td>
+				</tr>
+				<tr>
+					<td id="information">
+						<b><label id="lbliteminfo">Item Info</label></b>
+						<ul>
+							<li>Color: Pink, Orange, Green, Blue</li>
+							<li>Material: Plastic</li>
+						</ul>
+					</td>
+				</tr>
+						
+				<tr>
+					<td id="RelatedItem" colspan="3">
+						<nav>
+							<table style="width:100%" id="tableRelatedInfo">
+									<tr>
+										<td id="tdRelatedinfo"><b><label id="lblrelatedinfo">Related items</label></b></td></tr>
+									<tr>
+									<td>
+										<a href="#"><img src = "ruler.JPG" width="80"></img></a>
+										<a href="#"><img src = "eraser.JPG" width="80"></a>
+										<a href="#"><img src = "pencils.JPG" width="80"></a>
+									</td>
+								</tr>                  	
+							</table>
+						</nav>
+					</td>
+				</tr>
 			</table>
 		</div>
-		
-		<div id="divpencil">
-			<table style="width:75%" id="Item">
+
+		<div id="divPencil">
+			<table id="Item" style="width:80%">
 				<tr>
-					<th id="itemname">
+					<th id="itemname" colspan="3">
 						<label id="lblitemname">Pencil</label>
 					</th>
 				</tr>
-			</table>
-		</div>
-		
-		<div id="diveraser">
-			<table style="width:75%" id="Item">
+				
 				<tr>
-					<th id="itemname">
-						<label id="lblitemname">Eraser</label>
-					</th>
+					<td id="image"><img src="pencils.JPG" width="400" alt="Pencil"></td>
+					
+					<td id="orderinfo" rowspan="2">
+						<b><label for="howmany" id="lblnum">Number:</label></b><br>
+						<input type="number" id="howmany" placeholder="Quantity"><br>
+						<b><label id="lblcolor">Style:</label></b><br>
+						<button id="btnsharpened">Per-Sharpened</button>
+						<button id="btnsharpened">Un-Sharpened</button><br>
+						<b><label id="lbLremarks">Order Remarks (Optional):</label></b><br>
+						<input type="text" id="txtremarks" placeholder="Ex.May I have three un-sharpened and five per-sharpened?">
+					</td>
+					
+					<td id="additionalInfo" rowspan="2">
+						<label id="lblprice">Price: $0.02</label><br>
+						<label id="lblstock">In Stock</label><br><br>
+						<button id="AddToCart">Add to Cart</button><br>
+						<button id="BuyNow">Buy Now</button><br>
+						                    
+						<label id="lblship">Ships from: Hawkzon</label><br>
+						<label id="lblsold">Sold by: Hawkzon</label>
+					</td>
+				</tr>
+				<tr>
+					<td id="information">
+						<b><label id="lbliteminfo">Item Info</label></b>
+						<ul>
+							<li>Type: #2HB Pencil</li>
+							<li>Color: Yellow</li>
+							<li>Ink Color: Black</li>
+						</ul>
+					</td>
+				</tr>
+						
+				<tr>
+					<td id="RelatedItem" colspan="3">
+						<nav>
+							<table style="width:100%" id="tableRelatedInfo">
+									<tr>
+										<td id="tdRelatedinfo"><b><label id="lblrelatedinfo">Related items</label></b></td></tr>
+									<tr>
+									<td>
+										<a href="#"><img src = "ruler.JPG" width="80"></img></a>
+										<a href="#"><img src = "eraser.JPG" width="80"></img></a>
+									</td>
+								</tr>                  	
+							</table>
+						</nav>
+					</td>
 				</tr>
 			</table>
 		</div>
-		
+
+		<div id="divEraser">
+			<table id="Item" style="width:80%">
+				<tr>
+					<th id="itemname" colspan="3">
+						<label id="lblitemname">Eraser</label>
+					</th>
+				</tr>
+				
+				<tr>
+					<td id="image"><img src="eraser.JPG" width="400" alt="Eraser"></td>
+					
+					<td id="orderinfo" rowspan="2">
+						<b><label for="howmany" id="lblnum">Number:</label></b><br>
+						<input type="number" id="howmany" placeholder="Quantity"><br><br>
+						
+						<b><label id="lbLremarks">Order Remarks (Optional):</label></b><br>
+						<input type="text" id="txtremarks" placeholder="Ex.">
+					</td>
+					
+					<td id="additionalInfo" rowspan="2">
+					
+						<label id="lblprice">Price: $4.99</label><br>
+						<label id="lblstock">In Stock</label><br><br>
+						<button id="AddToCart">Add to Cart</button><br>
+						<button id="BuyNow">Buy Now</button><br>
+						                    
+						<label id="lblship">Ships from: Hawkzon</label><br>
+						<label id="lblsold">Sold by: Hawkzon</label>
+					</td>
+				</tr>
+				<tr>
+					<td id="information">
+						<b><label id="lbliteminfo">Item Info</label></b>
+						<ul>
+							<li>Color: Red, Black, Blue</li>
+							<li>Power Source: Rechargeable battery</li>
+							<li>Calculator Type: Graphing</li>
+						</ul>
+					</td>
+				</tr>
+						
+				<tr>
+					<td id="RelatedItem" colspan="3">
+						<nav>
+							<table style="width:100%" id="tableRelatedInfo">
+									<tr>
+										<td id="tdRelatedinfo"><b><label id="lblrelatedinfo">Related items</label></b></td></tr>
+									<tr>
+									<td>
+										<a href="#"><img src = "ruler.JPG" width="80"></img></a>
+										<a href="#"><img src = "eraser.JPG" width="80"></a>
+										<a href="#"><img src = "pencils.JPG" width="80"></a>
+									</td>
+								</tr>                  	
+							</table>
+						</nav>
+					</td>
+				</tr>
+			</table>
+		</div>
+
 	</body>
 </html>
