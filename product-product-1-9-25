@@ -27,13 +27,11 @@
 	                </th>
 	            </tr>
 	            <tr>
-	                <td id="image">
-	                    <img src="calculator.JPG" width="400" alt="Calculator">
-	                </td>
+	                <td id="image"><img src="calculator.JPG" width="400" alt="Calculator"></td>
 	                <td id="orderinfo" rowspan="2">
 	                    <b><label for="howmany" id="lblnum">Number:</label></b><br>
 	                    <input type="number" id="howmany" placeholder="Quantity"><br>
-	
+
 	                    <b><label id="lblcolor">Color:</label></b><br>
 	                    <button id="btnred">Red</button>
 	                    <button id="btnblack">Black</button>
@@ -42,7 +40,6 @@
 	                    <b><label id="lbLremarks">Order Remarks (Optional):</label></b><br>
 	                    <input type="text" id="txtremarks" placeholder="Ex.May I have one red and one blue?">
 	                </td>
-	
 	                <td id="additionalInfo" rowspan="2">
 						<label id="lblprice">Price: $90.00</label><br>
 	                    <label id="lblstock">In Stock</label><br><br>
@@ -54,7 +51,6 @@
 	                    <label id="lblsold">Sold by: Hawkzon</label>
 	                </td>
 	            </tr>
-	
 	            <tr>
 	                <td id="information">
 	                    <b><label id="lbliteminfo">Item Info</label></b>
@@ -65,16 +61,13 @@
 	                    </ul>
 	                </td>
 	            </tr>
-
-	            <tr>
-	                <td id="RelatedItem" colspan="3">
-	                    <nav>
-	                    	<table style="width:100%" id="tableRelatedInfo">
+				<tr><td id="RelatedItem" colspan="3">
+	                    <nav><table style="width:100%" id="tableRelatedInfo">
 	                    		<tr><td id="tdRelatedinfo"><b><label id="lblrelatedinfo">Related items</label></b></td></tr>
 	                    		<tr>
 			                        <td><a href="#"><img src = "ruler.JPG" width="80"></img></a>
 		                            <a href="#"><img src = "eraser.JPG" width="80"></a>
-		                            <a href="#"><img src = "eraser.JPG" width="80"></a></td>
+		                            <a href="#"><img src = "pencils.JPG" width="80"></a></td>
 	                            </tr>                  	
 	                    	</table>
 	                    </nav>
@@ -82,10 +75,9 @@
 	            </tr>
 	        </table>
 	    </div>
-	
+
 	</body>
 </html>
-
 
 
 
