@@ -32,7 +32,6 @@ table[id="Item"]
 th, td
 {
 	border-collapse: collapse;
-    /*padding: 10px;*/
     text-align: center;
 }
 
@@ -41,17 +40,11 @@ th[id="itemname"]
 	background-color: #f1f8e9;
 }
 
-td[id="image"], [id="orderinfo"], td[id="additionalInfo"], td[id="information"]
+td[id="image"], [id="orderinfo"], [id="additionalInfo"], [id="information"]
 {
 	border: 1px solid black;
     background-color: #e0f7fa;
-    /*padding: 20px;*/
-}
-
-td[id="RelatedItem"]
-{
-    background-color: #f1f8e9;
-	/*padding: 20px;*/
+    padding: 20px;
 }
 
 th[id="thhawkzon"]
@@ -72,7 +65,7 @@ label[id="lblprice"], [id="lblstock"]
 	color:green;
 }
 
-label,[id="lblnum"], [id="lblcolor"], [id="lbLremarks"], [id="lbliteminfo"], [id="RelatedItem"]
+label[id="lblnum"], [id="lblcolor"], [id="lbLremarks"], [id="lbliteminfo"]
 {
 	font-size: 23px;
 }
@@ -86,25 +79,53 @@ button
     border-radius: 12px;
     background-color: #5c6bc0;
     color: white;
-    border: none;
+    border-color: white;
 }
 
-/*
-button [id="btnred"]
+button[id="btnred"]
 {
-	background-color: red;
+	background-color: #c1221a;
 }
 
-button [id="btnblue"]
+button[id="btnblue"]
 {
-	background-color: blue;
+	background-color: #323faf;
 }
 
-button [id="btnblack"]
+button[id="btnblack"]
 {
 	background-color: black;
 }
-*/
+
+button[id="btnpink"]
+{
+	background-color: #fb0fa8;
+}
+
+button[id="btngreen"]
+{
+	background-color: green;
+}
+
+button[id="btnorange"]
+{
+	background-color: #f98606;
+}
+
+button[id="btnyellow"]
+{
+	background-color: #fde302;
+}
+
+button[id="btnpurple"]
+{
+	background-color: purple;
+}
+
+button[id="btnwhite"]
+{
+	background-color: #c6cace;
+} 
 
 input[type="number"], input[type="text"]
 {
