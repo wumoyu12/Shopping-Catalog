@@ -1,0 +1,83 @@
+localStorage.clear();
+			productNum = productNum + 1;
+			localStorage.setItem("PRODUCTNUM",productNum);
+			StoreName = "ITEMNAME" + productNum;
+			StoreNum = "ITEMNUM" + productNum;
+			StorePrice = "ITEMPRICE" + productNum;
+			StoreStyle = "ITEMSTYLE" + productNum;
+			StoreRemarks = "REMARKS" + productNum;
+			
+			GetName = "lblitemname" + num;
+			itemname = document.getElementById(GetName).textContent;
+			
+			namelist.push(itemname);
+			alert(namelist)
+			
+			localStorage.setItem(StoreName,namelist);
+			
+			GetNum = "howmany" + num;
+			itemnum = document.getElementById(GetNum).value;
+			localStorage.setItem(StoreNum,itemnum);
+			
+			GetPrice = "lblprice" + num;
+			itemprice  = document.getElementById(GetPrice).textContent;
+			localStorage.setItem(StorePrice,itemprice);
+			
+			localStorage.setItem(StoreStyle,itemstyle);
+			
+			GetRemarks = "txtremarks" + num;
+			itemremarks = document.getElementById(GetRemarks).value;
+			localStorage.setItem(StoreRemarks,itemremarks);
+
+
+
+
+
+
+
+
+ProductNUM = localStorage.getItem("PRODUCTNUM");
+	alert(ProductNUM)
+	
+	for(let i = 1; i <= ProductNUM; i++)
+	{
+		theName = "ITEMNAME" + i;
+		theNum = "ITEMNUM" + i;
+		thePrice = "ITEMPRICE" + i;
+		theStyle = "ITEMSTYLE" + i;
+		theRemarks = "REMARKS" + i;
+		
+		Itemname = localStorage.getItem(theName);
+		Itemnum = localStorage.getItem(theNum);
+		Itemprice = localStorage.getItem(thePrice);
+		Itemstyle = localStorage.getItem(theStyle);
+		Itemremarks = localStorage.getItem(theRemarks);
+		
+		LBLName = "lblname" + i;
+		document.getElementById(LBLName).textContent = Itemname;
+			
+	}
+	
+		if(ProductNUM == 1)
+		{
+			document.getElementById("lblname").textContent = Itemname;
+			document.getElementById("lblnumber").textContent = Itemnum + ", " + Itemprice;
+			document.getElementById("lblcolor").textContent = Itemstyle;
+			document.getElementById("lblremarks").textContent = Itemremarks;
+		}
+		else
+		{
+			document.getElementById("lblname2").textContent = Itemname;
+			document.getElementById("lblnumber2").textContent = Itemnum + ", " + Itemprice;
+			document.getElementById("lblcolor2").textContent = Itemstyle;
+			document.getElementById("lblremarks2").textContent = Itemremarks;
+		}
+	
+	
+	
+	
+	
+	
+
+
+
