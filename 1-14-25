@@ -1,0 +1,484 @@
+//window.addEventListener("load",AddListener);
+var price, TrueFalse, countFalse, color, number, msg, checknumber, YesOrNo, itemname, itemnum, itemprice, itemstyle, itemremarks,
+productNum = 0, namelist = [], numlist = [], pricelist = [], stylelist = [], remarkslist = [];
+
+//function AddListener()
+//{
+//	document.getElementById("ss").addEventListener("click",CheckPrice);
+//}
+
+function CheckPrice()
+{
+	countFalse = 0;
+	for(let i = 1; i <= 22; i++)
+	{	
+		HowmanyNumber = "howmany"+[i];
+		LabelNumber = "lblprice"+[i];
+		price = document.getElementById(HowmanyNumber).value;
+		CheckNum();
+		if(TrueFalse == "False")
+		{
+			document.getElementById(HowmanyNumber).value = 1;
+			price = 1;
+		}
+		switch(i)
+		{
+		case 1:
+			price = price * 15;
+			break;
+		case 2:
+			price = price * 7;
+			break;
+		case 3:
+			price = price * 90;
+			break;
+		case 4:
+			price = price * 4;
+			break;
+		case 5:
+			price = price * 1;
+			break;
+		case 6:
+			price = price * 4;
+			break;
+		case 7:
+			price = price * 1;
+			break;
+		case 8:
+			price = price * 1;
+			break;
+		case 9:
+			price = price * 2;
+			break;
+		case 10:
+			price = price * 2;
+			break;
+		case 11:
+			price = price * 15;
+			break;
+		case 12:
+			price = price * 18;
+			break;
+		case 13:
+			price = price * 16;
+			break;
+		case 14:
+			price = price * 14;
+			break;
+		case 15:
+			price = price * 20;
+			break;
+		case 16:
+			price = price * 20;
+			break;
+		case 17:
+			price = price * 20;
+			break;
+		case 18:
+			price = price * 20;
+			break;
+		case 19:
+			price = price * 150;
+			break;
+		case 20:
+			price = price * 20;
+			break;
+		case 21:
+			price = price * 20;
+			break;
+		case 22:
+			price = price * 10;
+			break;
+		default:
+			return false;
+		}	
+		document.getElementById(LabelNumber).textContent = "price: $" + price;
+
+	}
+	if(countFalse > 0)
+	{
+		alert("Please do not enter a number less than 1!");
+	}	
+}
+
+function CheckNum()
+{
+	if(price <= 0)
+	{
+		TrueFalse = "False";
+		countFalse = countFalse + 1;
+	}
+	else
+	{
+		TrueFalse = "True";
+	}
+}
+
+function WhatColor(which)
+{
+	color = which.substring(3,6);
+	length = which.length;
+	switch(color) 
+	{
+		case "red":
+			msg = "red";
+			number = which.substring(6,8);
+			break;
+  		case "blu":
+			msg = "blue";
+			number = which.substring(7,9);
+ 			break;
+  		case "bla":
+			msg = "black";
+			number = which.substring(8,10);
+    		break;
+    	case "gre":
+			msg = "green";
+			number = which.substring(8,10);
+    		break;
+    	case "pin":
+			msg = "pink";
+			number = which.substring(7,9);
+    		break;
+    	case "ora":
+			msg = "orange";
+			number = which.substring(9,11);
+    		break;	
+    	case "whi":
+			msg = "white";
+			number = which.substring(8,10);
+    		break;
+    	case "pur":
+			msg = "purple";
+			number = which.substring(9,11);
+    		break;
+    	case "yel":
+			msg = "yellow";
+			number = which.substring(9,11);
+    		break;
+    	case "bro":
+			msg = "brown";
+			number = which.substring(8,10);
+    		break;
+  		default:
+    		return false;
+	}
+	ColorLabel = "lblstyle" + number;
+	document.getElementById(ColorLabel).textContent = "selected color: " + msg;
+}
+
+function WhatColor2(whichone)
+{
+	if(whichone == "btnblackNwhite17")
+	{
+		document.getElementById("lblstyle17").textContent = "selected color: balck and white";
+	}
+	else
+	{
+		document.getElementById("lblstyle18").textContent = "selected color: blue and white";
+	}
+}
+
+function WhichStyle(style)
+{
+	if(style == "btnpresharpened5")
+	{
+		document.getElementById("lblstyle5").textContent = "selected style: pre-sharpened";
+	}
+	else
+	{
+		document.getElementById("lblstyle5").textContent = "selected style: un-sharpened";
+	}
+}
+
+function WhichSize(whichsize)
+{
+	size = whichsize.substring(3,4);
+	switch(size)
+	{
+		case "S":
+			msg = "S";
+    		break;
+    	case "M":
+			msg = "M";
+    		break;
+    	case "L":
+			msg = "L";
+    		break;
+  		default:
+    		return false;
+	}
+	number = whichsize.substring(4,6);
+	SizeLabel = "lblstyle" + number
+	document.getElementById(SizeLabel).textContent = "selected size: " + msg;
+}
+
+function WhichBook(whichbook)
+{
+	book = whichbook.substring(7,8);
+	switch(book)
+	{
+		case "A":
+			msg = "The Catcher in the Rye";
+    		break;
+    	case "B":
+			msg = "1984";
+    		break;
+    	case "C":
+			msg = "The Scarlet Letter";
+    		break;
+    	case "D":
+			msg = "The Wordy Shipmates";
+    		break;
+  		default:
+    		return false;
+	}
+	document.getElementById("lblstyle22").textContent = "selected book: " + msg;
+}
+
+function AddToCart(info)
+{
+	CheckPrice();
+	if(countFalse > 0)
+	{
+		YesOrNo = "TBD";
+	}
+	else
+	{
+		num = info.substring(9,11)
+		Label = "lblstyle" + num
+		itemstyle = document.getElementById(Label).textContent;
+		CheckStyle();
+		if(YesOrNo == "no")
+		{
+			alert("Please complete the information(color/style/size)")
+		}
+		else
+		{
+			localStorage.clear();
+			productNum = productNum + 1;
+			localStorage.setItem("PRODUCTNUM",productNum);
+			
+			GetName = "lblitemname" + num;
+			itemname = document.getElementById(GetName).textContent;
+			namelist.push(itemname);			
+			localStorage.setItem("ITEMNAME",namelist);
+			
+			GetNum = "howmany" + num;
+			itemnum = document.getElementById(GetNum).value;
+			numlist.push(itemnum);	
+			localStorage.setItem("ITEMNUM",numlist);
+			
+			GetPrice = "lblprice" + num;
+			itemprice  = document.getElementById(GetPrice).textContent;
+			pricelist.push(itemprice);	
+			localStorage.setItem("ITEMPRICE",pricelist);
+			
+			stylelist.push(itemstyle);	
+			localStorage.setItem("ITEMSTYLE",stylelist);
+			
+			GetRemarks = "txtremarks" + num;
+			itemremarks = document.getElementById(GetRemarks).value;
+			lengthremarks = itemremarks.length
+			if(lengthremarks == 0)
+			{
+				itemremarks = "N/A"
+			}
+			remarkslist.push(itemremarks);	
+			localStorage.setItem("REMARKS",remarkslist);
+			alert(namelist[i])
+		}
+	}	
+}
+
+function CheckStyle()
+{
+	Stylelen = itemstyle.length;
+	start = Stylelen - 4;
+	IsNone = itemstyle.substring(start,Stylelen);
+	if(IsNone == "none")
+	{
+		YesOrNo="no";
+	}
+	else
+	{
+		YesOrNo="yes";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopping Cart</title>
+		<link rel="stylesheet" type="text/css" href="cart.css"></link>
+		<link rel="shortcut icon" type="x-icon" href="Logo.JPG"></link>
+		<script src="cart.js"></script>
+	</head>
+	
+	<body>
+		<header id="HEAD">
+			<table id="title" style="width:100%">
+				<tr>
+					<th id="thlogo"><a href="index.html"><img src="Logo.JPG" width="127"></a></th>
+					<th id="thhawkzon">Hawkzon</th>
+					<th id="thcart"><img src = "ShoppingCart.JPG" width="127"></img></th>
+				</tr>
+			</table>
+		</header>
+		
+		<label id="lblname1">name</label><br>
+		<label id="lblnumber1">number</label><br>
+		<label id="lblprice1">price</label><br>
+		<label id="lblcolor1">color</label><br>
+		<label id="lblremarks1">remarks</label><br><br>
+		
+		<table id="ShoppingCart">
+			<tr>
+   		 		<td>Row1 cell1</td>
+   	 			<td>Row1 cell2</td>
+   	 			<td>Row1 cell1</td>
+   	 			<td>Row1 cell2</td>
+  			</tr>
+		</table>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener("load",AddListener);
+var tabel, tr, td1, td2, td3 , td4, td5, Itemname=[];
+function AddListener()
+{
+	ProductNUM = localStorage.getItem("PRODUCTNUM");
+	//alert(ProductNUM);
+	
+	
+	Itemname = localStorage.getItem("ITEMNAME");
+	Itemnum = localStorage.getItem("ITEMNUM");
+	Itemprice = localStorage.getItem("ITEMPRICE");
+	Itemstyle = localStorage.getItem("ITEMSTYLE");
+	Itemremarks = localStorage.getItem("REMARKS");
+	
+	
+	document.getElementById("lblname1").textContent = Itemname;
+	document.getElementById("lblnumber1").textContent = Itemnum;
+	document.getElementById("lblprice1").textContent = Itemprice;
+	document.getElementById("lblcolor1").textContent = Itemstyle;
+	document.getElementById("lblremarks1").textContent = Itemremarks;
+	AddToCart();
+			
+	
+}
+
+function AddToCart()
+{
+	for(i = 1; i <= ProductNUM; i++)
+	{
+		table = document.getElementById("ShoppingCart");
+		tr = table.insertRow(0);
+		td1 = tr.insertCell(0);
+		td2 = tr.insertCell(1);
+		td3 = tr.insertCell(2);
+		td4 = tr.insertCell(3);
+		td5 = tr.insertCell(4);
+		
+		theName = Itemname[1];
+		theNum = Itemnum[i];
+		thePrice = Itemprice[i];
+		theStyle = Itemstyle[i];
+		theRemarks = Itemremarks[i];
+		alert(theName)
+		
+		td1.innerHTML = theName;
+		td2.innerHTML = theNum;
+		td3.innerHTML = thePrice;
+		td4.innerHTML = theStyle;
+		td5.innerHTML = theRemarks;		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body
+{
+	background:#faebd4;
+	font-family:Times New Roman;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+h1
+{
+	text-align:center;
+}
+
+header
+{
+	padding: 20px;
+	background: #6bb5f1;
+}
+
+table,th,td
+{
+	margin: auto;
+	text-align:center;
+	font-size:20px;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+th[id="thhawkzon"]
+{
+	width:100%;
+	text-align:center;
+	font-size:50px;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+
+
