@@ -11,7 +11,7 @@
 			<table id="title" style="width:100%">
 				<tr>
 					<th id="thlogo"><a href="index.html"><img src="Logo.JPG" width="127"></a></th>
-					<th id="thhawkzon">Hawkzon</th>
+					<th id="thhawkzon">Payment</th>
 					<th id="thcart"><img src = "ShoppingCart.JPG" width="127"></img></th>
 				</tr>
 			</table>
@@ -19,13 +19,13 @@
 		
 		<table id="userinfo" style="border: 1px solid black">
 			<tr>
-				<th>
-					<label>Check Out</label>
+				<th id="thcheckout">
+					<label id="lblcheckout" >Check Out</label>
 				</th>
 			</tr>
 			<tr>
-				<th>
-					<label>Shipping Address:</label>
+				<th id="thaddress">
+					<label id="lbladdress">Shipping Address:</label>
 				</th>
 			</tr>
 			
@@ -103,13 +103,13 @@
 					<label>City:</label>
 					<input type="text" id="txtcity" placeholder="City"></input><br>
 					<label>Zip Code:</label>
-					<input type="Number" id="numzipcode" placeholder=""></input>
+					<input type="text" id="txtzipcode" placeholder=""></input>
 				</td>
 			</tr>
 			
 			<tr>
-				<th>
-					<label>Personal Information:</label>
+				<th id="thinfo">
+					<label id="lblinfo">Personal Information:</label>
 				</th>
 			</tr>
 			<tr>
@@ -133,8 +133,8 @@
 			</tr>
 			
 			<tr>
-				<th>
-					<label>Payment Information:</label>
+				<th id="thpayment">
+					<label id="lblpayment">Payment Information:</label>
 				</th>
 			</tr>
 			<tr>
@@ -158,7 +158,12 @@
 					<input type="text" id="securitycode" placeholder="Security Code"></input>
 				</td>
 			</tr>
+			<tr>
+				<td>
+					<button>Complete Payment</button>
+				</td>
+			</tr>
 		</table>
-		<button>Complete Payment</button>
+		
 	</body>
 </html>
