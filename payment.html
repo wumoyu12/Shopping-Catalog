@@ -17,32 +17,32 @@
 			</table>
 		</header>
 		
-		<table id="Address">
+		<table id="userinfo" style="border: 1px solid black">
 			<tr>
-				<td>
+				<th>
+					<label>Check Out</label>
+				</th>
+			</tr>
+			<tr>
+				<th>
 					<label>Shipping Address:</label>
-				</td>
+				</th>
 			</tr>
 			
 			<tr>
 				<td>
 					<label>Address Line 1:</label>
-				</td>
-				<td>
-					<label>Address Line 2(Optional):</label>
+					<input type="text" id="address" placeholder="Address Line 1"></input>
 				</td>
 			</tr>
 			
 			<tr>
 				<td>
-					<input type="text" id="address" placeholder="Address Line 1"></input>
-				</td>
-				
-				<td>
+					<label>Address Line 2(Optional):</label>
 					<input type="text" id="address" placeholder="Address Line 2"></input>
 				</td>
 			</tr>
-			
+					
 			<tr>
 				<td>
 					<label>State:</label>
@@ -99,63 +99,62 @@
 						<option value="WI">Wisconsin</option>
 						<option value="WY">Wyoming</option>
 					</select>
-				</td>
-				<td>
+					<br>
 					<label>City:</label>
-					<input type="text" id="txtcity" placeholder="City"></input>
-				</td>
-				
-				<td>
+					<input type="text" id="txtcity" placeholder="City"></input><br>
 					<label>Zip Code:</label>
 					<input type="Number" id="numzipcode" placeholder=""></input>
 				</td>
 			</tr>
-		</table>
-		<table>
+			
+			<tr>
+				<th>
+					<label>Personal Information:</label>
+				</th>
+			</tr>
 			<tr>
 				<td>
 					<label>First Name:</label>
-				</td>
-				<td>
-					<label>Last Name:</label>
-				</td>
-				<td>
-					<label>Phone Number:</label>
-				</td>
-			</tr>
-			
-			<tr>
-				<td>
 					<input type="text" id="fname" placeholder="First Name"></input>
 				</td>
+				
+			</tr>
+			<tr>
 				<td>
+					<label>Last Name:</label>
 					<input type="text" id="lname" placeholder="Last Name"></input>
 				</td>
+			</tr>
+			<tr>
 				<td>
+					<label>Phone Number:</label>
 					<input type="text" id="phonenum" placeholder="Phone Number"></input>
 				</td>
 			</tr>
 			
 			<tr>
+				<th>
+					<label>Payment Information:</label>
+				</th>
+			</tr>
+			<tr>
 				<td>
 					<label>Card Number:</label>
+					<input type="text" id="cardnum" placeholder="Card Number"></input>
 				</td>
+				
+			</tr>
+			
+			<tr>
 				<td>
 					<label>Expiration Date:</label>
-				</td>
-				<td>
-					<label>Security Code:</label>
+					<input type="text" id="expiration" placeholder="Expiration Date"></input>
 				</td>
 			</tr>
 			
 			<tr>
 				<td>
-					<input type="text" id="cardnum" placeholder="Card Number"></input>
-				</td>
-				<td>
-					<input type="text" id="expiration" placeholder="Expiration Date"></input>
-				</td>
-				<td>
+					<label>Security Code:</label>
 					<input type="text" id="securitycode" placeholder="Security Code"></input>
 				</td>
 			</tr>
