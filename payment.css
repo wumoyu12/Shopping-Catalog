@@ -16,3 +16,16 @@ th[id="thhawkzon"]
 	text-align:center;
 	font-size:50px;
 }
+
+table
+{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table[id=userinfo]
+{
+	width:55%;
+	font-size:30px;
+	text-align:center;
+}
